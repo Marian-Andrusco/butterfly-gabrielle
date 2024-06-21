@@ -23,7 +23,7 @@ const Acasa = () => {
         Programează-te acum pentru o evadare de neuitat.
       </p>
       <a
-        href="https://wa.me/40769834096"
+        // href="https://wa.me/40769834096"
         target="_blank"
         className="flex items-center"
       >

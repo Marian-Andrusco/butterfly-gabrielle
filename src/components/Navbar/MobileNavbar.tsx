@@ -50,7 +50,7 @@ const MobileNavbar = ({
         </div>
 
         {showBtnsMobile && (
-          <div className="absolute top-[70px] right-[10px] border-2 border-neutral-content rounded-xl w-auto h-auto p-8 flex flex-col items-center bg-base-100 z-30">
+          <div className="absolute top-[70px] right-[10px] border-2 border-neutral-content rounded-xl w-auto h-auto p-2 flex flex-col items-center bg-base-100 z-30">
             {routesBtns.map((btn) => (
               <Link
                 onClick={() => setShowBtnsMobile(false)}
