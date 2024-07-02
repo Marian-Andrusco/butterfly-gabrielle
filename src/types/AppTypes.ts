@@ -1,9 +1,18 @@
+export type TPrice = {
+  id: number;
+  time: number;
+  price: number;
+};
+
 export type TTherapies = {
   id: number;
   name: string;
+  type: "T" | "M";
   description: string;
+  shortDescription: string;
   logo?: string;
   link: string;
+  price: TPrice[];
 };
 
 export type TMobileNavbarProp = {
@@ -27,4 +36,17 @@ export type TRoutesBtns = {
 export type TPicturePath = {
   id: number;
   path: string;
+};
+
+export type TReviews = {
+  id: number;
+  name: string;
+  review: string;
+};
+
+export type TFaqs = {
+  id: number;
+  collapse: boolean;
+  question: string;
+  answer: string;
 };

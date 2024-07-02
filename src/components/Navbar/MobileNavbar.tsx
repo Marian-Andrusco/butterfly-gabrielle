@@ -20,6 +20,11 @@ const MobileNavbar = ({
   showTherapies,
   setShowTherapies,
 }: TMobileNavbarProp) => {
+  const styles = {
+    fontSize: "20px",
+    color: "6900FF",
+  };
+
   useEffect(() => {
     setShowBtnsMobile(false);
     window.addEventListener("resize", () => setShowBtnsMobile(false));
@@ -59,7 +64,9 @@ const MobileNavbar = ({
                 className="flex text-lg justify-between items-center text-neutral transition-all ease-in mb-3 w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"
               >
                 <span className="flex items-center">
-                  {changeLogo(btn.id)}
+                  <span className="mr-2 flex items-center justify-center">
+                    {changeLogo(btn.id, styles)}
+                  </span>
                   {btn.title}
                 </span>
                 <IoIosArrowForward className="text-xl" />
@@ -70,9 +77,9 @@ const MobileNavbar = ({
               onClick={() => setShowTherapies((prev) => !prev)}
               className="flex text-base justify-between items-center text-neutral transition-all ease-in mb-3 cursor-pointer w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"
             >
-              <span className="flex">
+              <span className="flex text-lg items-center">
                 <TbPhysotherapist className="mr-2 text-lg text-primary" />
-                Terapii
+                Terapii & Masaje
               </span>
               <span>
                 {showTherapies ? (
@@ -92,7 +99,9 @@ const MobileNavbar = ({
                   className="flex text-lg justify-between items-center text-neutral transition-all ease-in mb-3 w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"
                 >
                   <span className="flex">
-                    {changeLogo(t.id)}
+                    <span className="mr-2 flex items-center justify-center">
+                      {changeLogo(t.id, styles)}
+                    </span>
                     {t.name}
                   </span>
                   <IoIosArrowForward className="text-xl" />

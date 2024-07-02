@@ -20,9 +20,13 @@ const DesktopNavbar = ({
   setShowTherapies,
 }: TDesktopNavbarProp) => {
   const { colappse, setColappse } = useContext(sidebarCollapse);
+  const styles = {
+    fontSize: "20px",
+    color: "6900FF",
+  };
   return (
     <>
-      <div className="w-full h-screen bg-base-100 flex flex-col justify-between items-center p-6 border-r-2 border-neutral-content">
+      <div className=" w-full h-screen bg-base-100 flex flex-col justify-between items-center p-6 sticky top-0">
         <div className="w-full">
           <div className="flex text-4xl justify-center text-neutral mb-6 items-center">
             {colappse ? (
@@ -75,7 +79,7 @@ const DesktopNavbar = ({
               }
             >
               {colappse ? (
-                <>{changeLogo(btn.id)}</>
+                <>{changeLogo(btn.id, styles)}</>
               ) : (
                 <>
                   <span className="flex">
@@ -86,7 +90,7 @@ const DesktopNavbar = ({
                           : "mr-2 flex items-center justify-center"
                       }
                     >
-                      {changeLogo(btn.id)}
+                      {changeLogo(btn.id, styles)}
                     </span>
                     {btn.title}
                   </span>
@@ -110,9 +114,9 @@ const DesktopNavbar = ({
               </>
             ) : (
               <>
-                <span className="flex">
+                <span className="flex text-lg items-center">
                   <TbPhysotherapist className="mr-2 text-lg text-primary" />
-                  Terapii
+                  Terapii & Masaje
                 </span>
                 <span>
                   {showTherapies ? (
@@ -137,7 +141,7 @@ const DesktopNavbar = ({
                 }
               >
                 {colappse ? (
-                  <>{changeLogo(t.id)}</>
+                  <>{changeLogo(t.id, styles)}</>
                 ) : (
                   <>
                     <span className="flex">
@@ -148,7 +152,7 @@ const DesktopNavbar = ({
                             : "mr-2 flex items-center justify-center"
                         }
                       >
-                        {changeLogo(t.id)}
+                        {changeLogo(t.id, styles)}
                       </span>
                       {t.name}
                     </span>

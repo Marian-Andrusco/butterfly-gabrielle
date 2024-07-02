@@ -14,46 +14,44 @@ import { FaBrain } from "react-icons/fa6";
 import { SiJasmine } from "react-icons/si";
 import { useEffect, useState } from "react";
 
-export const changeLogo = (id: number): JSX.Element => {
-  let logo = <GiBowenKnot className=" text-xl text-primary" />;
+export const changeLogo = (id: number, styles): JSX.Element => {
+  let logo = <GiBowenKnot style={styles} />;
   switch (id) {
     case 1:
-      logo = <MdHealthAndSafety className=" text-xl text-primary" />;
+      logo = <MdHealthAndSafety style={styles} />;
       break;
     case 2:
-      logo = <TbMassage className=" text-xl text-primary" />;
+      logo = <TbMassage style={styles} />;
       break;
     case 3:
-      logo = <RiPsychotherapyLine className=" text-xl text-primary" />;
+      logo = <RiPsychotherapyLine style={styles} />;
       break;
     case 4:
-      logo = <AiFillSkin className=" text-xl text-primary" />;
+      logo = <AiFillSkin style={styles} />;
       break;
     case 5:
-      logo = <MdBloodtype className=" text-xl text-primary" />;
+      logo = <MdBloodtype style={styles} />;
       break;
     case 6:
-      logo = <FaBrain className=" text-xl text-primary" />;
+      logo = <FaBrain style={styles} />;
       break;
     case 7:
-      logo = (
-        <FaAmericanSignLanguageInterpreting className=" text-xl text-primary" />
-      );
+      logo = <FaAmericanSignLanguageInterpreting style={styles} />;
       break;
     case 100:
-      logo = <FaHome className=" text-xl text-primary" />;
+      logo = <FaHome style={styles} />;
       break;
     case 101:
-      logo = <SiJasmine className=" text-xl text-primary" />;
+      logo = <SiJasmine style={styles} />;
       break;
     case 102:
-      logo = <MdPermContactCalendar className=" text-xl text-primary" />;
+      logo = <MdPermContactCalendar style={styles} />;
       break;
     case 103:
-      logo = <MdUnsubscribe className=" text-xl text-primary" />;
+      logo = <MdUnsubscribe style={styles} />;
       break;
     default:
-      logo = <GiBowenKnot className=" text-xl text-primary" />;
+      logo = <GiBowenKnot style={styles} />;
       break;
   }
 

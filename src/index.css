@@ -17,3 +17,42 @@
   display: flex;
   justify-content: center;
 }
+
+.logo-carousel:first-child {
+  font-size: 48px;
+}
+
+.slick-prev:before {
+  color: "6900FF";
+}
+.bg-fixed-home-page {
+  background-image: url("/images/5.jpg");
+}
+.box-shadow {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  outline: none;
+  border: 10px solid base-100;
+  background-color: #ffffff;
+}
+.btn-shadow {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  outline: none;
+  cursor: pointer;
+  border: 10px solid #ffffff;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+.btn-shadow:hover {
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.whatsapp-btn {
+  bottom: 12px;
+  right: 12px;
+  left: calc(100% - 80px);
+}

@@ -1,53 +1,251 @@
-import { TPicturePath, TRoutesBtns, TTherapies } from "../src/types/AppTypes";
+import {
+  TFaqs,
+  TPicturePath,
+  TReviews,
+  TRoutesBtns,
+  TTherapies,
+} from "../src/types/AppTypes";
 
 export const therapies: TTherapies[] = [
   {
     id: 0,
-    name: "Toate Terapiile",
-    description: "",
-    link: "/terapii",
+    name: "Access Facelift",
+    type: "T",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
+    link: "/terapii/0",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+    ],
   },
   {
     id: 1,
     name: "Bowen",
-    description: "",
+    type: "T",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: `/terapii/1`,
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+    ],
   },
   {
     id: 2,
-    name: "Masaj de Relaxare",
-    description: "",
+    name: "Access Bars",
+    type: "T",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/2",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+    ],
   },
   {
     id: 3,
-    name: "Masaj Terapeutic",
-    description: "",
+    name: "Masaj Intuitiv",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/3",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
   },
   {
     id: 4,
-    name: "Masaj Anticelulitic",
-    description: "",
+    name: "Masaj Deep Tissue",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/4",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
   },
   {
     id: 5,
-    name: "Drenaj Limfatic",
-    description: "",
+    name: "Masaj de Relaxare",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/5",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
   },
   {
     id: 6,
-    name: "Acces Bars",
-    description: "",
+    name: "Masaj Terapeutic",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/6",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
   },
   {
     id: 7,
-    name: "Masaj intuitiv",
-    description: "",
+    name: "Drenaj Limfatic",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/7",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Masaj Visceral",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
+    link: "/terapii/8",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 200,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 250,
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "Reflexoterapie",
+    type: "M",
+    shortDescription:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+    description:
+      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
+    link: "/terapii/9",
+    price: [
+      {
+        id: 1,
+        time: 1,
+        price: 150,
+      },
+      {
+        id: 2,
+        time: 1.5,
+        price: 0,
+      },
+      {
+        id: 3,
+        time: 2,
+        price: 0,
+      },
+    ],
   },
 ];
 
@@ -62,13 +260,13 @@ export const routesBtns: TRoutesBtns[] = [
     id: 101,
     link: "/despreMine",
   },
+  // {
+  //   title: "Contact",
+  //   id: 102,
+  //   link: "/contact",
+  // },
   {
-    title: "Contact",
-    id: 102,
-    link: "/contact",
-  },
-  {
-    title: "Tarife si Abonamente",
+    title: "Tarife & Abonamente",
     id: 103,
     link: "/tarife",
   },
@@ -134,5 +332,81 @@ export const pictures: TPicturePath[] = [
   {
     id: 15,
     path: "/images/15.jpg",
+  },
+];
+
+export const reviews: TReviews[] = [
+  {
+    id: 1,
+    name: "Ana Dumitrascu",
+    review:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+  },
+  {
+    id: 2,
+    name: "Maria Dumitrascu",
+    review:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+  },
+  {
+    id: 3,
+    name: "Ana Dumitrascu",
+    review:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+  },
+  {
+    id: 4,
+    name: "Ana Dumitrascu",
+    review:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+  },
+  {
+    id: 5,
+    name: "Ana Dumitrascu",
+    review:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
+  },
+];
+
+export const faqs: TFaqs[] = [
+  {
+    id: 1,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 2,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+  },
+  {
+    id: 3,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 4,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 5,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 6,
+    question: "Lorem ipsum, dolor sit amet consectetur adipisicing elit?",
+    collapse: false,
+    answer: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   },
 ];
