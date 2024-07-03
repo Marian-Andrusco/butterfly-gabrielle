@@ -42,7 +42,7 @@ function App() {
         <a
           // href="https://wa.me/40769834096"
           target="_blank"
-          className="flex items-center justify-center w-[62px] h-[62px] bg-base-300  cursor-pointer rounded-full text-neutral shadow-lg sticky whatsapp-btn hover:bg-neutral transition-all ease-in"
+          className="flex items-center justify-center w-[62px] h-[62px] bg-base-300  cursor-pointer rounded-full text-neutral shadow-lg fixed whatsapp-btn hover:bg-neutral transition-all ease-in"
         >
           <FaWhatsapp className="text-success text-2xl" />
         </a>

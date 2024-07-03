@@ -1,6 +1,10 @@
 // Icons
-import { GiBowenKnot } from "react-icons/gi";
-import { FaHome, FaAmericanSignLanguageInterpreting } from "react-icons/fa";
+import { GiBowenKnot, GiStomach, GiFootprint } from "react-icons/gi";
+import {
+  FaHome,
+  FaAmericanSignLanguageInterpreting,
+  FaUniversalAccess,
+} from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { RiPsychotherapyLine } from "react-icons/ri";
 import {
@@ -14,9 +18,12 @@ import { FaBrain } from "react-icons/fa6";
 import { SiJasmine } from "react-icons/si";
 import { useEffect, useState } from "react";
 
-export const changeLogo = (id: number, styles): JSX.Element => {
+export const changeLogo = (id: number, styles: object): JSX.Element => {
   let logo = <GiBowenKnot style={styles} />;
   switch (id) {
+    case 0:
+      logo = <FaUniversalAccess style={styles} />;
+      break;
     case 1:
       logo = <MdHealthAndSafety style={styles} />;
       break;
@@ -37,6 +44,12 @@ export const changeLogo = (id: number, styles): JSX.Element => {
       break;
     case 7:
       logo = <FaAmericanSignLanguageInterpreting style={styles} />;
+      break;
+    case 8:
+      logo = <GiStomach style={styles} />;
+      break;
+    case 9:
+      logo = <GiFootprint style={styles} />;
       break;
     case 100:
       logo = <FaHome style={styles} />;

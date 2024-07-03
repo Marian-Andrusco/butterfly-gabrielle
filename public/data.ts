@@ -227,7 +227,7 @@ export const therapies: TTherapies[] = [
     shortDescription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto natus id hic perferendis tenetur, incidunt praesentium ut odio unde a!",
     description:
-      "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus harum quam similique eligendi quia consectetur autem deserunt voluptates dignissimos sapiente, molestias quo inventore provident, temporibus numquam quibusdam architecto ducimus quos. Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta provident illum sunt. Aliquam, accusamus aliquid ducimus repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati tempora eius cum, quo voluptate ut voluptas!",
     link: "/terapii/9",
     price: [
       {

@@ -9,7 +9,7 @@ export default {
   daisyui: {
     themes: [
       {
-        darkSide: {
+        therapy: {
           primary: "#8762FF",
           secondary: "#FD35E4",
           accent: "3FCEB4",

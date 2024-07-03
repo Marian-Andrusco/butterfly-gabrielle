@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { changeLogo } from "../utility/Utility";
 import { RxAvatar } from "react-icons/rx";
 import { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Acasa = () => {
   const [showHideFqa, setshowHideFqa] = useState<null | number>(null);
@@ -97,6 +98,39 @@ const Acasa = () => {
         >
           Contactează-mă <FaWhatsapp className="ml-3 text-primary text-xl" />
         </a>
+      </div>
+
+      {/* Who I am */}
+      <div className="w-full p-8 bg-base-100 flex justify-center items-center">
+        <div className="flex w-3/4 justify-center gap-8 flex-wrap">
+          <img
+            src="images/8.jpg"
+            alt=""
+            className="rounded-2xl lg:w-[500px] md:w-[400px] w-[300px]"
+          />
+          <div className="rounded-2xl lg:w-[500px] md:w-[400px] w-[300px] ">
+            <h3 className="text-2xl text-primary mb-3 font-semibold text-center">
+              Cine este Gabrielle?
+            </h3>
+            <p className="text-base mb-6 w-full">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              harum quam similique eligendi quia consectetur autem deserunt
+              voluptates dignissimos sapiente, molestias quo inventore
+              provident, temporibus numquam quibusdam architecto ducimus quos.
+              Eligendi esse deserunt soluta dolore tempore quisquam nisi dicta
+              provident illum sunt. Aliquam, accusamus aliquid ducimus
+              repudiandae fugiat soluta laboriosam eaque voluptatibus obcaecati
+              tempora eius cum, quo voluptate ut voluptas!
+            </p>
+            <Link
+              to="/despreMine"
+              className="flex items-center justify-center px-[20px] py-[10px] bg-base-100 hover:text-secondary cursor-pointer rounded-md text-neutral shadow-lg btn-shadow"
+            >
+              Afla mai multe
+              <IoIosArrowForward className="text-xl ml-6" />
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* Therapies Section */}
