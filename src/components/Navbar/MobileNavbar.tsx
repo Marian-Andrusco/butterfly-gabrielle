@@ -32,7 +32,7 @@ const MobileNavbar = ({
 
   return (
     <>
-      <div className="w-full h-[60px] bg-base-100 flex justify-between items-center py-6 px-8 border-b-2 border-neutral-content">
+      <div className="w-full h-[60px] bg-base-100 flex justify-between items-center py-6 px-8 shadow-lg">
         <Link
           to="/"
           className="flex text-4xl justify-center items-center text-neutral "
