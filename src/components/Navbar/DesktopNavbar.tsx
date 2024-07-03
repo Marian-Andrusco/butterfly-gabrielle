@@ -26,7 +26,7 @@ const DesktopNavbar = ({
   };
   return (
     <>
-      <div className=" w-full h-screen bg-base-100 flex flex-col justify-between items-center p-6 sticky top-0">
+      <div className=" w-full h-screen bg-base-100 flex flex-col justify-between items-center p-6 sticky top-0 shadow-lg">
         <div className="w-full">
           <div className="flex text-4xl justify-center text-neutral mb-6 items-center">
             {colappse ? (
