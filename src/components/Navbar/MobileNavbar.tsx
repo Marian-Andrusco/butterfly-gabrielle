@@ -31,31 +31,31 @@ const MobileNavbar = ({
   }, []);
 
   return (
-    <>
-      <div className="w-full h-[60px] bg-base-100 flex justify-between items-center py-6 px-8 shadow-lg">
+    <div className="w-full h-[60px] bg-base-100 flex justify-center shadow-lg">
+      <div className="max-w-[1500px] sm:w-3/4 w-full flex justify-between items-center sm:px-8 px-4 relative">
         <Link
           to="/"
           className="flex text-4xl justify-center items-center text-neutral "
         >
-          <GiButterfly className="mr-2 text-4xl text-primary" />
+          <GiButterfly className="text-4xl text-primary" />
           Gabrielle
         </Link>
 
         <div className="flex items-center">
-          <FaSearch className="hidden sm:block text-2xl text-primary mr-1 cursor-pointer hover:text-secondary" />
+          <FaSearch className="hidden lg:block text-2xl text-primary mr-1 cursor-pointer hover:text-secondary" />
           <input
             type="text"
             placeholder="Cauta terapia dorita"
-            className="hidden p-1 sm:flex text-base justify-between items-center text-accent-content transition-all ease-in w-[250px]  rounded-md mr-6 border-2 focus-visible:border-secondary outline-none"
+            className="hidden p-1 lg:flex text-base justify-between items-center text-accent-content transition-all ease-in w-[250px]  rounded-md mr-6 border-2 focus-visible:border-secondary outline-none"
           />
           <PiButterflyThin
             onClick={() => setShowBtnsMobile((prev: boolean) => !prev)}
-            className="mr-2 text-6xl text-primary cursor-pointer hover:text-secondary"
+            className="text-6xl text-primary cursor-pointer hover:text-secondary"
           />
         </div>
 
         {showBtnsMobile && (
-          <div className="absolute top-[70px] right-[10px] border-2 border-neutral-content rounded-xl w-auto h-auto p-2 flex flex-col items-center bg-base-100 z-30">
+          <div className="absolute top-[70px] sm:right-8 right-4 shadow-lg rounded-xl w-auto h-auto p-2 flex flex-col items-center bg-base-100 z-30">
             {routesBtns.map((btn) => (
               <Link
                 onClick={() => setShowBtnsMobile(false)}
@@ -90,13 +90,13 @@ const MobileNavbar = ({
               </span>
             </div>
 
-            <div className={showTherapies ? "flex flex-col pl-4" : "hidden"}>
+            <div className={showTherapies ? "flex flex-col" : "hidden"}>
               {therapies.map((t) => (
                 <Link
                   onClick={() => setShowBtnsMobile(false)}
                   key={t.id}
                   to={`${t.link}`}
-                  className="flex text-lg justify-between items-center text-neutral transition-all ease-in mb-3 w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"
+                  className="pl-4 flex text-lg justify-between items-center text-neutral transition-all ease-in mb-3 w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"
                 >
                   <span className="flex">
                     <span className="mr-2 flex items-center justify-center">
@@ -111,7 +111,7 @@ const MobileNavbar = ({
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

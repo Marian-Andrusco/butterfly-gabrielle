@@ -9,20 +9,28 @@ const Sidenavbar = () => {
   const [showBtnsMobile, setShowBtnsMobile] = useState<boolean>(false);
 
   return (
+    // <>
+    //   {mobileNavbar ? (
+    //     <MobileNavbar
+    //       showBtnsMobile={showBtnsMobile}
+    //       setShowBtnsMobile={setShowBtnsMobile}
+    //       showTherapies={showTherapies}
+    //       setShowTherapies={setShowTherapies}
+    //     />
+    //   ) : (
+    //     <DesktopNavbar
+    //       showTherapies={showTherapies}
+    //       setShowTherapies={setShowTherapies}
+    //     />
+    //   )}
+    // </>
     <>
-      {mobileNavbar ? (
-        <MobileNavbar
-          showBtnsMobile={showBtnsMobile}
-          setShowBtnsMobile={setShowBtnsMobile}
-          showTherapies={showTherapies}
-          setShowTherapies={setShowTherapies}
-        />
-      ) : (
-        <DesktopNavbar
-          showTherapies={showTherapies}
-          setShowTherapies={setShowTherapies}
-        />
-      )}
+      <MobileNavbar
+        showBtnsMobile={showBtnsMobile}
+        setShowBtnsMobile={setShowBtnsMobile}
+        showTherapies={showTherapies}
+        setShowTherapies={setShowTherapies}
+      />
     </>
   );
 };

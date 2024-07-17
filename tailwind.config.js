@@ -8,17 +8,14 @@ export default {
   plugins: [daisyui],
   daisyui: {
     themes: [
-      {
-        therapy: {
-          primary: "#8762FF",
-          secondary: "#FD35E4",
-          accent: "3FCEB4",
-          neutral: "#fff",
-          "base-100": "#2D313D",
-          "base-200": "#A9ABBD",
-        },
-      },
+      // {
+      // light: {
+      //   ...require("daisyui/src/theming/themes")["light"],
+      //   primary: "pink",
+      //   secondary: "2FD8BC",
+      // },
       "light",
+      // },
     ],
   },
 };

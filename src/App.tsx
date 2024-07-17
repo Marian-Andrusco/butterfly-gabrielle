@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { FaWhatsapp } from "react-icons/fa";
 import React, { createContext, useState } from "react";
+import Footer from "./components/Footer";
 
 type TColappse = {
   colappse: boolean;
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <sidebarCollapse.Provider value={{ colappse, setColappse }}>
-      <div className=" lg:grid lg:grid-cols-12 lg:grid-rows-1  sm:flex flex-col">
+      {/* <div className=" lg:grid lg:grid-cols-12 lg:grid-rows-1  sm:flex flex-col">
         <div
           className={
             colappse
@@ -36,15 +37,23 @@ function App() {
           }
         >
           <Outlet />
+          <Footer />
         </div>
+      </div> */}
+
+      <div className="flex flex-col">
+        <Navbar />
+        <Outlet />
+        <Footer />
       </div>
+
       <>
         <a
           // href="https://wa.me/40769834096"
           target="_blank"
-          className="flex items-center justify-center w-[62px] h-[62px] bg-base-300  cursor-pointer rounded-full text-neutral shadow-lg fixed whatsapp-btn hover:bg-neutral transition-all ease-in"
+          className="flex items-center justify-center w-[62px] h-[62px] bg-neutral-content hover:bg-neutral cursor-pointer rounded-full shadow-2xl fixed whatsapp-btn transition-all ease-in text-success hover:text-accent"
         >
-          <FaWhatsapp className="text-success text-2xl" />
+          <FaWhatsapp className="text-2xl" />
         </a>
       </>
     </sidebarCollapse.Provider>
