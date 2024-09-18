@@ -4,7 +4,7 @@ import { therapies } from "../../public/data";
 
 const Tarife = () => {
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex w-full justify-center tarife">
       <div className="max-w-[1500px] sm:w-3/4 w-full flex flex-col sm:p-8 p-4">
         <h2 className="text-4xl text-primary mb-6 font-semibold text-center ">
           Tarife si Abonamente

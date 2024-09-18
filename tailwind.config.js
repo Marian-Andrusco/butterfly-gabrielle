@@ -8,14 +8,14 @@ export default {
   plugins: [daisyui],
   daisyui: {
     themes: [
-      // {
-      // light: {
-      //   ...require("daisyui/src/theming/themes")["light"],
-      //   primary: "pink",
-      //   secondary: "2FD8BC",
-      // },
-      "light",
-      // },
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          primary: "00b4d8",
+          secondary: "A700A2",
+        },
+        // "light",
+      },
     ],
   },
 };

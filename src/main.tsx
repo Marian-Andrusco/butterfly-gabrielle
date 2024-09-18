@@ -12,7 +12,7 @@ import Acasa from "./pages/Acasa.tsx";
 import Contact from "./pages/Contact.tsx";
 import DespreMine from "./pages/DespreMine.tsx";
 import Tarife from "./pages/Tarife.tsx";
-import Terapii from "./pages/Terapii.tsx";
+// import Terapii from "./pages/Terapii.tsx";
 import TerapieTemplate from "./pages/TerapieTemplate.tsx";
 import Error from "./pages/Error.tsx";
 
@@ -23,9 +23,9 @@ const routes = createBrowserRouter(
       <Route path="/despreMine" element={<DespreMine />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/tarife" element={<Tarife />} />
-      <Route path="/terapii" element={<Terapii />} />
+      {/* <Route path="/terapii" element={<Terapii />} /> */}
       <Route path="/terapii/:id" element={<TerapieTemplate />} />
-      <Route path="/" element={<Error />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );

@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="w-full text-center text-neutral">
-        Website created by: <span className="text-primary">Owl Sight SRL</span>
+        Website created by: <span className="text-primary">BlackNexus</span>
       </p>
     </>
   );

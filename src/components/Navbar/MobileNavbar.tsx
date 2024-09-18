@@ -8,7 +8,8 @@ import {
   IoIosArrowForward,
   IoIosArrowUp,
 } from "react-icons/io";
-import { PiButterflyThin } from "react-icons/pi";
+// import { PiButterflyThin } from "react-icons/pi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { TMobileNavbarProp } from "../../types/AppTypes";
 import { changeLogo } from "../../utility/Utility";
 import { routesBtns, therapies } from "../../../public/data";
@@ -22,7 +23,7 @@ const MobileNavbar = ({
 }: TMobileNavbarProp) => {
   const styles = {
     fontSize: "20px",
-    color: "6900FF",
+    color: "00b4d8",
   };
 
   useEffect(() => {
@@ -48,9 +49,12 @@ const MobileNavbar = ({
             placeholder="Cauta terapia dorita"
             className="hidden p-1 lg:flex text-base justify-between items-center text-accent-content transition-all ease-in w-[250px]  rounded-md mr-6 border-2 focus-visible:border-secondary outline-none"
           />
-          <PiButterflyThin
-            onClick={() => setShowBtnsMobile((prev: boolean) => !prev)}
-            className="text-6xl text-primary cursor-pointer hover:text-secondary"
+          <RxHamburgerMenu
+            onClick={() => {
+              setShowBtnsMobile((prev: boolean) => !prev);
+              setShowTherapies(false);
+            }}
+            className="text-4xl text-primary cursor-pointer hover:text-secondary"
           />
         </div>
 
@@ -93,7 +97,10 @@ const MobileNavbar = ({
             <div className={showTherapies ? "flex flex-col" : "hidden"}>
               {therapies.map((t) => (
                 <Link
-                  onClick={() => setShowBtnsMobile(false)}
+                  onClick={() => {
+                    setShowBtnsMobile(false);
+                    setShowTherapies(false);
+                  }}
                   key={t.id}
                   to={`${t.link}`}
                   className="pl-4 flex text-lg justify-between items-center text-neutral transition-all ease-in mb-3 w-[300px] p-2 rounded-md hover:bg-neutral hover:text-base-100"

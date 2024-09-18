@@ -11,6 +11,7 @@ import {
   IoIosArrowUp,
 } from "react-icons/io";
 import { PiButterflyThin } from "react-icons/pi";
+// import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { changeLogo } from "../../utility/Utility";
 import { routesBtns, therapies } from "../../../public/data";
@@ -22,7 +23,7 @@ const DesktopNavbar = ({
   const { colappse, setColappse } = useContext(sidebarCollapse);
   const styles = {
     fontSize: "20px",
-    color: "6900FF",
+    color: "00b4d8",
   };
   return (
     <>

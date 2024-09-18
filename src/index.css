@@ -23,7 +23,7 @@
 }
 
 .slick-prev:before {
-  color: "6900FF";
+  color: "00b4d8";
 }
 .bg-fixed-home-page {
   background-image: url("/images/5.jpg");
@@ -55,4 +55,10 @@
   bottom: 12px;
   right: 12px;
   left: calc(100% - 80px);
+}
+
+.tarife,
+.error {
+  min-height: 900px;
+  height: calc(100vh - 340px);
 }

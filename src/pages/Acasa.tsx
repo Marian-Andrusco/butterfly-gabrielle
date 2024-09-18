@@ -21,7 +21,7 @@ const Acasa = () => {
 
   const styles = {
     fontSize: "48px",
-    color: "6900FF",
+    color: "00b4d8",
   };
 
   const settings = {
@@ -118,7 +118,7 @@ const Acasa = () => {
               <p className=" h-[200px] overflow-hidden">{t.shortDescription}</p>
               <Link
                 to={t.link}
-                className="btn-shadow px-6 py-3 rounded-full text-primary hover:text-secondary text-center"
+                className="btn-shadow px-6 py-3 rounded-full text-primary hover:text-secondary text-center font-semibold"
               >
                 Vreau {t.name}
               </Link>
