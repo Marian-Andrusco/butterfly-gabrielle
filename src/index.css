@@ -58,7 +58,7 @@
 }
 
 .tarife,
-.error {
-  min-height: 900px;
-  height: calc(100vh - 340px);
+.error,
+.terapie {
+  min-height: calc(100vh - 340px);
 }

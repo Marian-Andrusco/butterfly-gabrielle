@@ -266,7 +266,7 @@ export const routesBtns: TRoutesBtns[] = [
   //   link: "/contact",
   // },
   {
-    title: "Tarife & Abonamente",
+    title: "Preturi & Abonamente",
     id: 103,
     link: "/tarife",
   },
